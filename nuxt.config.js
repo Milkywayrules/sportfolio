@@ -4,17 +4,18 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'sportfolio',
+    // title: 'S-Portfolio',
+    titleTemplate: '%s // S-Portfolio',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'konten' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
 
@@ -37,6 +38,20 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      "nuxt-social-meta",
+      {
+        url: "https://sportfolio.dioilham.com",
+        title: "Judul",
+        site_name: "S-Portfolio",
+        description: "Deskripsi singkat aja",
+        img: "Link to image in static folder",
+        locale: "en_US",
+        twitter: "@galaxx",
+        twitter_card: "summary_large_image",
+        themeColor: "#theme-color",
+      },
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
